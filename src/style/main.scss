@@ -1,0 +1,31 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/bootstrap/scss/normalize";
+@import "../../bower_components/tether/dist/css/tether.min.css";
+@import "../../bower_components/bootstrap/scss/bootstrap";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+
+
+/*
+* Custom
+*/
+@import "partials/variable";
+
+body {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+
+// Always End
+@import "partials/media";
