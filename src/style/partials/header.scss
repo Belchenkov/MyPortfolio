@@ -4,11 +4,20 @@ header {
   background: #fff url("../img/bg_header.jpg") no-repeat;
   background-size: cover;
 
+  .header__top {
+    min-height: 3.125rem;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    padding: 2.135rem 3.125rem;
+
+  }
   .header__social-icons {
-    padding-top: 1.92rem;
     text-align: left;
+    flex-grow: 1;
     a {
-      display: inline-block;
+      float: left;
+      margin-right: 3.92rem;
       i.fa:hover {
         color: $hover-bg;
         transition: color .2s ease-in;
@@ -16,8 +25,7 @@ header {
       i.fa {
         width: 25px;
         height: 25px;
-        font-size: 30px;
-        margin-right: 1.92rem;
+        font-size: 40px;
         color: #fff;
         background-color: transparent;
         transition: color .3s ease-in;
@@ -26,15 +34,37 @@ header {
   }
   
   .header__menu-hamb {
-    text-align: right;
-    a span.hamburger {
+    position: fixed;
+    top: 4.2rem;
+    right: 5.2rem;
+  div {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+
+    span.hamburger,
+    span.hamburger::before,
+    span.hamburger::after {
       display: block;
-      width: 40px;
-      height: 3px;
-      font-size: 30px;
-      font-weight: bold;
+      position: absolute;
+      width: 3.75rem;
+      height: 10px;
+      border-radius: 3px;
       background: #fff;
     }
+
+    span.hamburger::before {
+      content: '';
+      margin-top: -1.6375rem;
+    }
+    span.hamburger::after {
+      content: '';
+      margin-top: 1.6375rem;
+    }
+  }
+
   }
 
 }
