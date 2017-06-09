@@ -9,15 +9,17 @@ header {
     display: flex;
     align-content: space-between;
     align-items: center;
-    padding: 2.135rem 3.125rem;
+    padding: 1.135rem 3.125rem;
+    margin-bottom: 5rem;
 
   }
   .header__social-icons {
     text-align: left;
     flex-grow: 1;
+    margin-left: -1.5rem;
     a {
       float: left;
-      margin-right: 3.92rem;
+      margin-right: 3rem;
       i.fa:hover {
         color: $hover-bg;
         transition: color .2s ease-in;
@@ -25,7 +27,7 @@ header {
       i.fa {
         width: 25px;
         height: 25px;
-        font-size: 40px;
+        font-size: 35px;
         color: #fff;
         background-color: transparent;
         transition: color .3s ease-in;
@@ -35,8 +37,9 @@ header {
   
   .header__menu-hamb {
     position: fixed;
-    top: 4.2rem;
-    right: 5.2rem;
+    top: 2.8rem;
+    right: -1rem;
+
   div {
     display: block;
     position: relative;
@@ -44,27 +47,64 @@ header {
     height: 100px;
     cursor: pointer;
 
+
     span.hamburger,
     span.hamburger::before,
     span.hamburger::after {
       display: block;
       position: absolute;
-      width: 3.75rem;
-      height: 10px;
+      width: 3rem;
+      height: 7px;
       border-radius: 3px;
       background: #fff;
     }
 
+    span.hamburger:hover,
+    span.hamburger::before:hover,
+    span.hamburger::after:hover {
+      background-color: $hover-bg;
+
+    }
+
     span.hamburger::before {
       content: '';
-      margin-top: -1.6375rem;
+      margin-top: -1rem;
     }
     span.hamburger::after {
       content: '';
-      margin-top: 1.6375rem;
+      margin-top: 1rem;
+    }
+  }
+ }
+
+
+.header__avatar-box {
+  width: 100%;
+  min-height: 300px;
+
+  img.header__photo {
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    border: 3px solid #3c763d;
+    margin-bottom: 1.875rem;
+  }
+  .header__avatar-desc {
+    line-height: 1.171;
+    text-align: center;
+    color: $white;
+
+    h3 {
+      font-size: 2.188rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
     }
   }
 
-  }
+}
+
 
 }
