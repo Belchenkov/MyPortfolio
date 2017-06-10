@@ -10,7 +10,7 @@ header {
     align-content: space-between;
     align-items: center;
     padding: 1.135rem 3.125rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 
   }
   .header__social-icons {
@@ -88,6 +88,7 @@ header {
     border-radius: 50%;
     border: 3px solid #3c763d;
     margin-bottom: 1.875rem;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
   }
   .header__avatar-desc {
     line-height: 1.171;

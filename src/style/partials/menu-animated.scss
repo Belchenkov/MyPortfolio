@@ -1,0 +1,29 @@
+.nav-is-visible .cd-3d-nav,
+.cd-3d-nav .cd-selected a,
+.no-touch .cd-3d-nav .cd-selected a:hover {
+  background-color: rgb(108, 156, 90);
+  padding-top: 3rem;
+}
+
+.cd-marker.color-1,
+.cd-marker.color-2,
+.cd-marker.color-3,
+.cd-marker.color-4 {
+  background-color: #fff;
+  color: #fff;
+}
+
+.cd-3d-nav {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cd-3d-nav-trigger {
+  margin-top: -0.625rem;
+}
+
+.cd-3d-nav-container .fa {
+  font-size: 45px;
+}
