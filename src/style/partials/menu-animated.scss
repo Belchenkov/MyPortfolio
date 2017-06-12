@@ -1,29 +1,67 @@
-.nav-is-visible .cd-3d-nav,
-.cd-3d-nav .cd-selected a,
-.no-touch .cd-3d-nav .cd-selected a:hover {
-  background-color: rgb(108, 156, 90);
-  padding-top: 3rem;
+nav.cd-3d-nav-container.nav-is-visible {
+  box-shadow: 0 4px 20px #000!important;
+  background-color: $header-menu;
+
+  li.cd-selected a:focus {
+    color: #fff;
+  }
+  .nav-is-visible .cd-3d-nav,
+  .cd-3d-nav .cd-selected a,
+  .cd-3d-nav  a,
+  .no-touch .cd-3d-nav .cd-selected a:hover {
+    background-color: $header-menu;
+    padding-top: 5.5rem;
+  }
+
+  .cd-marker.color-1,
+  .cd-marker.color-2,
+  .cd-marker.color-3,
+  .cd-marker.color-4 {
+    background-color: #fff;
+    color: #fff;
+  }
+
+  ul.cd-3d-nav {
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: $header-menu;
+  }
+  .fa {
+    font-size: 3rem;
+  }
+  li.cd-selected a,
+  li a {
+    .fa {
+      font-size: 4.5rem;
+    }
+    font-size: 2.3rem;
+    transition: color .3s ease-out;
+    text-shadow: $main-txt-sh;
+  }
+
+  li.cd-selected a:hover,
+  li a:hover{
+    color: #3d9970!important;
+    text-decoration: none;
+  }
 }
 
-.cd-marker.color-1,
-.cd-marker.color-2,
-.cd-marker.color-3,
-.cd-marker.color-4 {
-  background-color: #fff;
-  color: #fff;
-}
-
-.cd-3d-nav {
-  width: 100%;
-  padding-left: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.cd-3d-nav-trigger {
-  margin-top: -0.625rem;
-}
-
-.cd-3d-nav-container .fa {
-  font-size: 45px;
+.header__menu-hamb > div > a.cd-3d-nav-trigger {
+  display: block;
+  margin-top: 0;
+  width: 70px;
+  height: 70px;
+  span,
+  span::before,
+  span::after {
+    display: block;
+    width: 60px;
+    height: 7px;
+    border-radius: 5px;
+    text-shadow: $main-txt-sh;
+  }
+  span::after {
+  }
 }
