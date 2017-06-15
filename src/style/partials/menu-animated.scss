@@ -1,13 +1,22 @@
-nav.cd-3d-nav-container.nav-is-visible {
+
+nav.cd-3d-nav-container {
+  background-color: $header-menu;
+}
+
+nav.cd-3d-nav-container.nav-is-visible,
+{
   box-shadow: 0 4px 20px #000!important;
   background-color: $header-menu;
 
-  li.cd-selected a:focus {
-    color: #fff;
+  .cd-3d-nav li {
+    background-color: $header-menu;
   }
+
   .nav-is-visible .cd-3d-nav,
   .cd-3d-nav .cd-selected a,
   .cd-3d-nav  a,
+  .cd-3d-nav  a:active,
+  .cd-3d-nav  a:focus,
   .no-touch .cd-3d-nav .cd-selected a:hover {
     background-color: $header-menu;
     padding-top: 5.5rem;
@@ -27,6 +36,10 @@ nav.cd-3d-nav-container.nav-is-visible {
     display: flex;
     justify-content: space-between;
     background-color: $header-menu;
+    list-style: none;
+    li.cd-selected {
+      background-color: $header-menu;
+    }
   }
   .fa {
     font-size: 3rem;
@@ -42,7 +55,7 @@ nav.cd-3d-nav-container.nav-is-visible {
   }
 
   li.cd-selected a:hover,
-  li a:hover{
+  li a:hover {
     color: #3d9970!important;
     text-decoration: none;
   }
@@ -50,18 +63,17 @@ nav.cd-3d-nav-container.nav-is-visible {
 
 .header__menu-hamb > div > a.cd-3d-nav-trigger {
   display: block;
-  margin-top: 0;
+  margin-top: -1rem;
   width: 70px;
   height: 70px;
   span,
   span::before,
   span::after {
     display: block;
-    width: 60px;
-    height: 7px;
+    width: 35px;
+    height: 4px;
     border-radius: 5px;
     text-shadow: $main-txt-sh;
   }
-  span::after {
-  }
+  
 }

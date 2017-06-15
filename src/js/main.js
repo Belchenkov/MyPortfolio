@@ -25,4 +25,27 @@ jQuery(document).ready(function($){
         event.preventDefault();
         $('#carbonads-container').hide();
     });
+    
+});
+
+// Typed.js 
+// https://github.com/mattboldt/typed.js
+document.addEventListener("DOMContentLoaded", function(){
+    Typed.new(".my-name", {
+        strings: ["Бельченков Алексей"],
+        typeSpeed: 30,
+        showCursor: false,
+        shuffle: true,
+    });
+
+     Typed.new(".what-here", {
+         strings: ["Личный сайт веб разработчика"],
+         typeSpeed: 30,
+         showCursor: false,
+         shuffle: true,
+         fadeOut: true,
+         startDelay: 2000,
+    });
+
+    
 });
