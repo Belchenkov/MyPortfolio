@@ -1,19 +1,22 @@
 main {
   /* === My Works ===*/
-  .h1 {
+  .h2 {
     padding-top: 5rem;
-    margin-top: -22rem;
     margin-bottom: 0;
     min-width: 35rem;
     min-height: 16rem;
     color:  #373e42;
     font-weight: 700;
     font-size: 8rem;
-    background: url("../img/works_header_bg.png") no-repeat center top;
     background-size: auto;
   }
 
-  p.under_h1 {
+  .h2-works {
+    margin-top: -22rem;
+    background: url("../img/works_header_bg.png") no-repeat center top;
+  }
+
+  p.under_h2 {
     width: 100px;
     height: 5px;
     border-radius: 4px;

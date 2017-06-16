@@ -1,0 +1,27 @@
+#section-box {
+    width: 100%;
+    min-height: 1100px;
+    background:url('../img/contact_bg.png') no-repeat center;
+    background-size: cover;
+}
+
+form.form_send {
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgba(218, 219, 214, 0.6);
+    height: 461px;
+    padding-top: 50px;
+    
+    div {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        input {
+            background-color:  rgba(255, 255, 255, 0.85);
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+          }
+    }
+    
+}
