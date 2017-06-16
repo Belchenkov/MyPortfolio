@@ -3,8 +3,9 @@ main {
   .h1 {
     padding-top: 5rem;
     margin-top: -22rem;
+    margin-bottom: 0;
     min-width: 35rem;
-    min-height: 18rem;
+    min-height: 16rem;
     color:  #373e42;
     font-weight: 700;
     font-size: 8rem;
@@ -13,10 +14,41 @@ main {
   }
 
   p.under_h1 {
-    width: 70px;
+    width: 100px;
     height: 5px;
     border-radius: 4px;
-    background-color: $main-color;
-    margin: 0 auto;
+    background-color: $heading-color;
+    margin: 0 auto 35px;
+  }
+
+  section#works {
+    width: 100%;
+    min-height: 750px;
+
+    .works__nameTech {
+      background-color:  #ebefe2;
+      min-height: 750px;
+    }
+
+    .works__demoWorks {
+      background-color:  #e1e4d7;
+      min-height: 750px;
+    }
+
+    .works__buttons_box {
+      margin: 0 auto;
+      padding-top: 80px;
+      .works__button {
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 7px;    
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 15px 25px;
+        background-color: blue;
+      }
+    }
   }
 }
