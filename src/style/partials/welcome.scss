@@ -1,6 +1,82 @@
-section.welcome__wrapper {
-    width: 100vw;
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
+body {
     background: url("../img/welcome_bg.png") no-repeat center;
     background-size: cover;
+}
+
+section.welcome__wrapper {
+    width: 100%;
+    height: 100%;
+   
+
+    .welcome__log_in {
+        text-align: right;
+        padding: 30px 30px 0 0;
+        margin-bottom: 35px;
+
+        .welcome__btn-log_in {
+            border: 2px solid #fff;
+            padding: 10px 25px;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: $main-txt-sh;
+            transition: box-shadow .3s ease-out;
+            
+        }
+        .welcome__btn-log_in:hover {
+            text-decoration: none;
+            box-shadow: 0 0 10px #fff;
+
+        }
+    }
+
+    .welcome__form-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .welcome__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            border-radius: 7px;
+            width: 300px;
+            height: 300px;
+            padding-top: 25px;
+            background-color: rgba(0, 0, 0, .4);
+            .welcome__photo {
+                width: 149px;
+                align-self: center;
+                height: 149px;
+                border-radius: 50%;
+                border: 3px solid #fff;
+                margin-bottom: 1.875rem;
+                box-shadow: 0 0 25px #fff;
+            }
+            .welcome__form-buttons {
+                display: flex;
+                .welcome__form-btn {
+                    flex-grow: 1;
+                    background-color: $header-menu;
+                    transition: background-color .3s ease-out;
+                    color: #fff;
+                    border: none;
+                    border-right: 1px solid #fff;
+                    font-size: 16px;
+                    padding: 10px;
+                    font-weight: bold;
+                    font-family: 'Marck Script', cursive;
+                }
+
+                .welcome__form-btn:last-child {
+                    border-right: none;
+                }
+
+                .welcome__form-btn:hover {
+                    background-color: $hover-bg;
+                }
+            }
+        }
+    }
 }
