@@ -33,14 +33,14 @@ jQuery(document).ready(function($){
 document.addEventListener("DOMContentLoaded", function(){
     Typed.new(".my-name", {
         strings: ["Бельченков Алексей"],
-        typeSpeed: 30,
+        typeSpeed: 40,
         showCursor: false,
         shuffle: true,
     });
 
      Typed.new(".what-here", {
-         strings: ["Личный сайт веб разработчика"],
-         typeSpeed: 30,
+         strings: ["Личный сайт web-разработчика"],
+         typeSpeed: 40,
          showCursor: false,
          shuffle: true,
          fadeOut: true,

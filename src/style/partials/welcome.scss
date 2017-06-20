@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Kurale&subset=cyrillic');
 
-body {
-    background: url("../img/welcome_bg.png") no-repeat center;
-    background-size: cover;
-}
 
 section.welcome__wrapper {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background: url("../img/welcome_bg.png") no-repeat center;
+    background-size: cover;
    
 
     .welcome__log_in {
@@ -22,7 +20,8 @@ section.welcome__wrapper {
             color: #fff;
             font-weight: bold;
             text-shadow: $main-txt-sh;
-            transition: box-shadow .3s ease-out;
+            transition: box-shadow .2s ease-out;
+            font-size: 23px;
             
         }
         .welcome__btn-log_in:hover {
@@ -36,24 +35,64 @@ section.welcome__wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 100px;
         .welcome__form {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
-            border-radius: 7px;
-            width: 300px;
-            height: 300px;
-            padding-top: 25px;
-            background-color: rgba(0, 0, 0, .4);
+            padding-top: 30px;
+            border-radius: 5px;
+            background-color:  rgba(18, 38, 32, 0.6);
+            box-shadow: 0 0 15px #000;
+            width: 380px;
+            height: 395px;
             .welcome__photo {
                 width: 149px;
                 align-self: center;
                 height: 149px;
                 border-radius: 50%;
                 border: 3px solid #fff;
-                margin-bottom: 1.875rem;
+                margin: 0 auto 15px;
                 box-shadow: 0 0 25px #fff;
             }
+
+            .welcome__avatar-desc {
+                color: #fff;
+                height: 100px;
+                
+                 h3 {
+                        font-size: 4.188rem;
+                        font-weight: 700;
+                    }
+                p {
+                    font-size: 2.4rem;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+            }
+
+            .welcome__social-icons {
+                flex-grow: 1;
+                a {
+                     margin-right: 3rem;
+                    i.fa:hover {
+                        color: $hover-bg;
+                        transition: color .2s ease-out;
+                    }
+                    i.fa {
+                        width: 15px;
+                        height: 15px;
+                        font-size: 27px;
+                        text-shadow: $main-txt-sh;
+                        color: #fff;
+                        background-color: transparent;
+                        transition: color .3s ease-out;
+                    }
+                }
+                a:last-child {
+                    margin-right: 0;
+                }
+            }
+
             .welcome__form-buttons {
                 display: flex;
                 .welcome__form-btn {
@@ -62,11 +101,11 @@ section.welcome__wrapper {
                     transition: background-color .3s ease-out;
                     color: #fff;
                     border: none;
-                    border-right: 1px solid #fff;
-                    font-size: 16px;
+                    border-right: 2px solid #fff;
+                    font-size: 20px;
                     padding: 10px;
                     font-weight: bold;
-                    font-family: 'Marck Script', cursive;
+                    font-family: 'Kurale', serif;
                 }
 
                 .welcome__form-btn:last-child {
@@ -75,6 +114,7 @@ section.welcome__wrapper {
 
                 .welcome__form-btn:hover {
                     background-color: $hover-bg;
+                    text-decoration: none;
                 }
             }
         }
