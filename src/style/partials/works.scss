@@ -37,21 +37,5 @@ main {
       background-color:  #e1e4d7;
       min-height: 750px;
     }
-
-    .works__buttons_box {
-      margin: 0 auto;
-      padding-top: 80px;
-      .works__button {
-        display: block;
-        width: 100%;
-        cursor: pointer;
-        color: #fff;
-        border-radius: 7px;    
-        margin-bottom: 15px;
-        text-align: center;
-        padding: 15px 25px;
-        background-color: blue;
-      }
-    }
   }
 }
