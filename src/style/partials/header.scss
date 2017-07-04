@@ -78,13 +78,17 @@ header {
     font-size: 3.5rem;
     color: #fff;
     text-shadow: $main-txt-sh;
-    transition: text-shadow .3s ease-out;
+    transition: all .4s ease-out;
     overflow: hidden;
   }
 
   .small-arrow .fa:hover {
-    text-shadow: 0 3px 10px $header-menu;
-    transition: text-shadow .3s ease-out;
+    box-shadow: 0 0 15px #fff;
+    transition: all .4s ease-out;
+    color: $hover-bg;
+    border: 1px dashed $hover-bg;
+    border-radius: 50%;
+    padding: 10px;
   }
 }
 
