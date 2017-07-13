@@ -3,6 +3,27 @@
     min-height: 1100px;
     background:url('../img/contact_bg.png') no-repeat center;
     background-size: cover;
+
+.small-arrow .fa {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: $main-txt-sh;
+    transition: all .4s ease-out;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+
+  .small-arrow .fa:hover {
+    box-shadow: 0 0 15px #fff;
+    transition: all .4s ease-out;
+    color: $hover-bg;
+    border: 1px dashed $hover-bg;
+    border-radius: 50%;
+    padding: 10px;
+  }
 }
 
 form.form_send {
@@ -12,7 +33,7 @@ form.form_send {
     height: 500px;
     padding-top: 50px;
     overflow: hidden;
-    
+
     div.row {
         margin: 0 auto 30px;
         
@@ -21,15 +42,16 @@ form.form_send {
             width: 85%;    
             background-color:  rgba(255, 255, 255, 0.85);
             padding: 15px;
-            border-radius: 20px;
+            border-radius: 10px;
             border: none;
             outline: none;
         }
         textarea {
             height: 130px;
         }
-
+       
         .btn-form {
+            margin-top: 60px;
             background-color:  #4e8839;
             border-radius: 0;
             color: #fff;
@@ -42,11 +64,11 @@ form.form_send {
         }
 
         .btn-submit {
-            border-right: 1px solid #eee;
+            margin-left: -15px;
         }
 
         .btn-reset {
-            border-left: 1px solid #fff;
+            margin-right: -15px;
         }
     }
     

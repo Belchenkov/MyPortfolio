@@ -25,11 +25,20 @@
                 }
             }
         }
+        div.footer__contacts {
+            font-size: 2.2rem;
+            text-align: left;
+            padding-left: 80px;
+
+            i.fa {
+                margin-right: 10px;
+            }
+        }
 
         div.footer__social-icons {
             padding-top: 30px;
             a  {
-                font-size: 3rem;
+                font-size: 4rem;
                 color: #fff;
                 transition: color .3s ease-out;
                 margin-right: 3rem;
