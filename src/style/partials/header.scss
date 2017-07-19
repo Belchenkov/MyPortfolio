@@ -8,6 +8,7 @@ header {
   .header__top {
     min-height: 3.125rem;
     display: flex;
+    flex-wrap: wrap;
     align-content: space-between;
     align-items: center;
     padding: 1.135rem 3.125rem;
