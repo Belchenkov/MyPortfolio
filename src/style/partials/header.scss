@@ -1,114 +1,101 @@
 header {
-  max-width: 100%;
-  min-height: 120rem;
-  background: #fff url("../img/bg_header.jpg") no-repeat center;
-  background-size: cover;
-  overflow: hidden;
-
-  .header__top {
-    min-height: 3.125rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    align-items: center;
-    padding: 1.135rem 3.125rem;
-    margin-bottom: 13rem;
-
-    .header__contacts {
-      color: #fff;
-      font-size: 2.3rem;
-      text-shadow: $main-txt-sh;
-      text-align: left;
-      
-      span {
-        margin-right: 15px;
-      }
-
-      span:last-child {
-        margin-right: 0;
-      }
-      i.fa {
-        margin-right: 5px;
-      }
-    }
-
-  }
-  .header__social-icons {
-    text-align: left;
-    flex-grow: 1;
-    margin-left: -1.5rem;
-    a {
-      float: left;
-      margin-right: 3rem;
-      i.fa:hover {
-        color: $hover-bg;
-        transition: color .3s ease-out;
-      }
-      i.fa {
-        width: 25px;
-        height: 25px;
-        font-size: 35px;
-        text-shadow: $main-txt-sh;
-        color: #fff;
-        background-color: transparent;
-        transition: color .3s ease-out;
-      }
-    }
-  }
-
-  .header__menu-hamb  div {
-    position: fixed;
-    top: 2.8rem;
-    right: -1rem;
- }
-
-.header__avatar-box {
-  width: 100%;
-  min-height: 400px;
-  margin-bottom: 10rem;
-
-  img.header__photo {
-    width: 149px;
-    height: 149px;
-    border-radius: 50%;
-    border: 3px solid #3c763d;
-    margin-bottom: 1.875rem;
-    box-shadow: 0 0 25px #fff;
-  }
-  .header__avatar-desc {
-    line-height: 1.171;
-    text-align: center;
-    color: $white;
-    text-shadow: $main-txt-sh;
-
-    h3 {
-      font-size: 5.188rem;
-      font-weight: 700;
-    }
-    p {
-      font-size: 2.7rem;
-      font-weight: 400;
-      font-style: italic;
-    }
-  }
-}
-
-  .small-arrow .fa {
-    font-size: 3.5rem;
-    color: #fff;
-    text-shadow: $main-txt-sh;
-    transition: all .4s ease-out;
+    max-width: 100%;
+    min-height: 120rem;
+    background: #fff url("../img/bg_header.jpg") no-repeat center;
+    background-size: cover;
     overflow: hidden;
-  }
-
-  .small-arrow .fa:hover {
-    box-shadow: 0 0 15px #fff;
-    transition: all .4s ease-out;
-    color: $hover-bg;
-    border: 1px dashed $hover-bg;
-    border-radius: 50%;
-    padding: 10px;
-  }
+    .header__top {
+        min-height: 3.125rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: center;
+        padding: 1.135rem 3.125rem;
+        margin-bottom: 13rem;
+        .header__contacts {
+            color: #fff;
+            font-size: 2.3rem;
+            text-shadow: $main-txt-sh;
+            text-align: left;
+            span {
+                margin-right: 15px;
+            }
+            span:last-child {
+                margin-right: 0;
+            }
+            i.fa {
+                margin-right: 5px;
+            }
+        }
+    }
+    .header__social-icons {
+        text-align: left;
+        flex-grow: 1;
+        margin-left: -1.5rem;
+        a {
+            float: left;
+            margin-right: 3rem;
+            i.fa:hover {
+                color: $hover-bg;
+                transition: color .3s ease-out;
+            }
+            i.fa {
+                width: 25px;
+                height: 25px;
+                font-size: 35px;
+                text-shadow: $main-txt-sh;
+                color: #fff;
+                background-color: transparent;
+                transition: color .3s ease-out;
+            }
+        }
+    }
+    .header__menu-hamb div {
+        position: fixed;
+        top: 2.8rem;
+        right: -1rem;
+    }
+    .header__avatar-box {
+        width: 100%;
+        min-height: 400px;
+        margin-bottom: 10rem;
+        img.header__photo {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 2px solid #3c763d;
+            margin-bottom: 1.875rem;
+            box-shadow: 0 0 25px #fff;
+        }
+        .header__avatar-desc {
+            line-height: 1.171;
+            text-align: center;
+            color: $white;
+            text-shadow: $main-txt-sh;
+            h3 {
+                font-size: 5.188rem;
+                font-weight: 700;
+            }
+            p {
+                font-size: 2.7rem;
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+    }
+    .small-arrow .fa {
+        font-size: 3.5rem;
+        color: #fff;
+        text-shadow: $main-txt-sh;
+        transition: all .4s ease-out;
+        overflow: hidden;
+    }
+    .small-arrow .fa:hover {
+        box-shadow: 0 0 15px #fff;
+        transition: all .4s ease-out;
+        color: $hover-bg;
+        border: 1px dashed $hover-bg;
+        border-radius: 50%;
+        padding: 10px;
+    }
 }
-
-
